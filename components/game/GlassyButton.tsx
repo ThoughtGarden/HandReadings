@@ -96,7 +96,6 @@ export function GlassyButton({
   );
 }
 
-// Preset colors matching Swift implementation
 export const ButtonColors = {
   green: '#22c55e',
   blue: '#3b82f6',

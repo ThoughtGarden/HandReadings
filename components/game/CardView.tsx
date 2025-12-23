@@ -1,4 +1,3 @@
-// CardView component matching Swift implementation
 
 import React from 'react';
 import {
@@ -16,8 +15,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import { Card, getSuitSymbol, Suit } from '@/lib/models/Card';
 
-// Map card images - these need to be required statically
-// You'll need to copy the card images from the Swift project to assets/images/Cards/
 const cardImages: Record<string, any> = {
   // Clubs
   'cardClubs2': require('@/assets/images/Cards/cardClubs2.png'),
@@ -125,7 +122,7 @@ export function CardView({
       contentFit="contain"
     />
   ) : (
-    // Fallback text-based card display if images aren't available
+    
     <View style={[styles.fallbackCard, { width, height }]}>
       <Text style={[styles.fallbackRank, { color: getSuitColor(card.suit) }]}>
         {card.rank}
